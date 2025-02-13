@@ -166,7 +166,7 @@ $qIn   = getList(
     CIMNotify::Add($arMessageFields);
 
 
-
+/////////////////////////////////////////////////////////////////////////////
 
 
     $iblockId = 149;
@@ -183,13 +183,139 @@ $qIn   = getList(
         702, //worker
         "NAME",
         701, //task
-        700,
-        //???? / total kakoy-to
+        700
     );
 
 
+    $totalBalance;
 
- ?>
+
+    
+    function getList(
+            $list = 0, 
+            $select = array(), 
+            $filter = array(), 
+            $order = 'ID', 
+            $start = 0, 
+            $content = array()
+        )
+
+
+
+
+
+
+
+    function getList($list = 0, $select = array(), $filter = array(), $order = 'ID', $start = 0, $content = array())
+    {
+        sleep(1);
+        $reqList = CRest::call('lists.element.get', array('select' => $select, 
+            'IBLOCK_TYPE_ID' => 'lists', 'IBLOCK_ID' => $list, 'FILTER' => $filter, 'ELEMENT_ORDER' => array($order => 'DESC'), 'start' => $start));
+        if($reqList['result'])
+        {
+            $totalQuery = ceil($reqList['total'] /50);
+            if($totalQuery > 1)
+            {
+                if($totalQuery <= 50)
+                {
+                    $s = 0;
+                    $query = array();
+                    for($i = 1; $i <= $totalQuery; $i++)
+                    {
+                        $query[$i] = array('method' => 'lists.element.get', 
+                            'params' => array('select' => $select, 'IBLOCK_TYPE_ID' => 'lists', 'IBLOCK_ID' => $list, 
+                            'FILTER' => $filter, 'ELEMENT_ORDER' => array($order => 'DESC'), 'start' => $s));
+                        $s += 50;
+                    }
+                    
+                    sleep(1);
+                    $request = CRest::callBatch($query);
+                    foreach($request['result']['result'] as $value)
+                    {
+                        foreach($value as $val)
+                        {
+                            $content[] = $val;
+                        }
+                    }
+                }
+                
+                
+            }
+            else
+            {
+                foreach($reqList['result'] as $value)
+                {
+                    $content[] = $value;
+                }
+            }
+        }
+        
+        return $content;
+    }
+
+
+?>
+
+
+
+
+
+
+    <li class="nav-item"><a href="#BAFhistory" class="nav-link" data-toggle="tab">История изменения баланса</a></li>
+
+    <div class="tab-pane fade" id="BAFhistory" style="font-size: 14px;padding:20px">
+
+    <div class="mytarget" style="display: none;">
+
+        <?php    
+        $historyTable   = getList(
+            30,
+            array(
+                "TIMESTAMP_X",
+                702, //worker
+                "NAME",
+                701, //task
+                700
+            ),
+            array(),
+            'TIMESTAMP_X', // Изменено на 'TIMESTAMP_X'
+            0
+        );
+
+
+        $htmlTable = '<table border="1">';
+        $htmlTable .= '<tr>';
+        $htmlTable .= '<th>Дата последнего изменения</th>';
+        $htmlTable .= '<th>Идентификатор работника (worker)</th>';
+        $htmlTable .= '<th>Название</th>';
+        $htmlTable .= '<th>Идентификатор задачи (task)</th>';
+        $htmlTable .= '<th>Идентификатор дополнительного поля</th>';
+        $htmlTable .= '</tr>';
+
+        foreach ($historyTable as $row) {
+            $htmlTable .= '<tr>';
+            $htmlTable .= '<td>'.$row['TIMESTAMP_X'].'</td>';
+            $htmlTable .= '<td>'.$row['702'].'</td>';
+            $htmlTable .= '<th>'.$row['NAME'].'</th>';
+            $htmlTable .= '<td>'.$row['701'].'</td>';
+            $htmlTable .= '<td>'.$row['700'].'</td>';
+
+            $totalBalance = + 701;
+
+            $htmlTable .= '<td>'.$row[$totalBalance].'</td>';
+            $htmlTable .=('</tr>');
+
+
+        }
+
+        $htmlTable .= '</table>';
+
+        echo $htmlTable;
+        ?>
+
+    </div>
+
+ 
 
 
 <table>

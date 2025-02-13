@@ -1,0 +1,40 @@
+#modalSearchUser {
+    background: #fff;
+    z-index: 5;
+    position: fixed;
+    width: 600px;
+    top: 45px;
+    left: 174px;
+    border: #8f8f8f solid 2px;
+    border-radius: 10px;
+    text-align: -webkit-center;
+    display:none;
+}
+
+#modalFilter span {
+    cursor: default;
+}
+
+#modalFilter select {
+    cursor:pointer;
+}
+
+#modalFilter select, #modalFilter input {
+    height: 30px;
+}
+
+input + input {
+    margin-left: 10px;
+}
+
+#inputName::-webkit-input-placeholder {
+  color: #fff;
+}
+
+#modalFilter > tr > td > div {
+    text-align: -webkit-right;
+}
+
+span + .check {
+    margin-left: 10px;
+}

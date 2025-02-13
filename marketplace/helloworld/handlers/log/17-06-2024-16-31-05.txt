@@ -1,0 +1,28 @@
+array (
+  'event' => 'ONAPPTEST',
+  'event_id' => '728',
+  'data' => 
+  array (
+    'QUERY' => 
+    array (
+      'ID' => '798',
+    ),
+    'LANGUAGE_ID' => 'ru',
+  ),
+  'ts' => '1718631064',
+  'auth' => 
+  array (
+    'access_token' => 'a8487066006e8580005843ea00000321000006fe9dfbc087ce5a429459c66bfbb2a81e',
+    'expires' => '1718634664',
+    'expires_in' => '3600',
+    'scope' => 'crm,user,imbot,im',
+    'domain' => 'gkyw.ru',
+    'server_endpoint' => 'https://oauth.bitrix.info/rest/',
+    'status' => 'L',
+    'client_endpoint' => 'https://gkyw.ru/rest/',
+    'member_id' => '4a9d758a6fd2ac24378ed352db90b9a4',
+    'user_id' => '801',
+    'refresh_token' => '98c79766006e8580005843ea000003210000063e61a1f686e89f45152532006028e4d9',
+    'application_token' => '50277455ea59de07181476894805456a',
+  ),
+)

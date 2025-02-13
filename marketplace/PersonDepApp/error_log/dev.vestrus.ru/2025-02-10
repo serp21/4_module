@@ -1,0 +1,32 @@
+23:36:19
+Call to a member function isException() on null
+
+31 : /home/bitrix/www/marketplace/PersonDepApp/include/lib/user.php - exception
+28 : /home/bitrix/www/marketplace/PersonDepApp/include/session/user_session.php - current
+63 : /home/bitrix/www/marketplace/PersonDepApp/index.php - __construct
+
+110 : /home/bitrix/www/marketplace/PersonDepApp/index.php - error
+0 => 500,
+1 => Call to a member function isException() on null
+
+31 : /home/bitrix/www/marketplace/PersonDepApp/include/lib/user.php - exception
+28 : /home/bitrix/www/marketplace/PersonDepApp/include/session/user_session.php - current
+63 : /home/bitrix/www/marketplace/PersonDepApp/index.php - __construct
+
+
+
+110 : /home/bitrix/www/marketplace/PersonDepApp/index.php - error
+0 => 500,
+1 => Call to a member function isException() on null
+
+31 : /home/bitrix/www/marketplace/PersonDepApp/include/lib/user.php - exception
+28 : /home/bitrix/www/marketplace/PersonDepApp/include/session/user_session.php - current
+63 : /home/bitrix/www/marketplace/PersonDepApp/index.php - __construct
+
+
+
+
+
+
+
+

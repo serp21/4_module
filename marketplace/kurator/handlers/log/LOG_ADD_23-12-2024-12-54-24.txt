@@ -1,0 +1,31 @@
+array (
+  'event' => 'ONTASKADD',
+  'event_handler_id' => '903',
+  'data' => 
+  array (
+    'FIELDS_BEFORE' => 'undefined',
+    'FIELDS_AFTER' => 
+    array (
+      'ID' => '313972',
+    ),
+    'IS_ACCESSIBLE_BEFORE' => 'N',
+    'IS_ACCESSIBLE_AFTER' => 'undefined',
+  ),
+  'ts' => '1734947662',
+  'auth' => 
+  array (
+    'access_token' => '5e416967007421bc005843ea000003860000071a583a8cfa88d2896d0ef68b94ac8a9a',
+    'expires' => '1734951262',
+    'expires_in' => '3600',
+    'scope' => 'user_brief,task',
+    'domain' => 'gkyw.ru',
+    'server_endpoint' => 'https://oauth.bitrix.info/rest/',
+    'status' => 'L',
+    'client_endpoint' => 'https://gkyw.ru/rest/',
+    'member_id' => '4a9d758a6fd2ac24378ed352db90b9a4',
+    'user_id' => '902',
+    'application_token' => '28edd97a27152bc9f20ebd05fbe127d7',
+  ),
+  0 => 0,
+  1 => '313972',
+)

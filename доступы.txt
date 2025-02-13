@@ -1,0 +1,8 @@
+dev.vestrus.ru
+порт 5443
+bitrix
+Bitrix_dev*0
+
+Новый access token: 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
+
+/home/bitrix/www/marketplace/appFot

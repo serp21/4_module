@@ -1,0 +1,28 @@
+.modal-header {
+    padding: 5px;
+}
+
+.modal-body {
+    padding: 15px;
+}
+
+.modal-footer {
+    padding: 0;
+}
+
+.modal-body select, .modal-body input {
+    height: 30px;
+}
+
+.modal-body select {
+    cursor: pointer;
+}
+
+.modal-footer button {
+    margin: 2px;
+}
+
+.modal-body #UF_DEPARTMENT, .modal-body #UF_DEPARTMENT_OLD, .modal-body #WORK_POSITION {
+    width: 100%;
+    cursor: pointer;
+}

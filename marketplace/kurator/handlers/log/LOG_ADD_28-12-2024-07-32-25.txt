@@ -1,0 +1,31 @@
+array (
+  'event' => 'ONTASKADD',
+  'event_handler_id' => '903',
+  'data' => 
+  array (
+    'FIELDS_BEFORE' => 'undefined',
+    'FIELDS_AFTER' => 
+    array (
+      'ID' => '313975',
+    ),
+    'IS_ACCESSIBLE_BEFORE' => 'N',
+    'IS_ACCESSIBLE_AFTER' => 'undefined',
+  ),
+  'ts' => '1735360344',
+  'auth' => 
+  array (
+    'access_token' => '688d6f67007421bc005843ea00000386000006c61c4d3f8269fffa6e50404f71b5d252',
+    'expires' => '1735363944',
+    'expires_in' => '3600',
+    'scope' => 'user_brief,task',
+    'domain' => 'dev.vestrus.ru',
+    'server_endpoint' => 'https://oauth.bitrix.info/rest/',
+    'status' => 'L',
+    'client_endpoint' => 'https://dev.vestrus.ru/rest/',
+    'member_id' => '4a9d758a6fd2ac24378ed352db90b9a4',
+    'user_id' => '902',
+    'application_token' => '28edd97a27152bc9f20ebd05fbe127d7',
+  ),
+  0 => 0,
+  1 => '313975',
+)

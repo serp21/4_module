@@ -1,0 +1,31 @@
+.open {
+    cursor: pointer;
+}
+
+header + div {
+    background: #fff;
+    border-radius: 10px;
+}
+
+#table > table {
+    min-width: 600px;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#table > table > thead > tr {
+    min-height: 35px;
+    border-bottom: #d7d7d7 solid 1px;
+}
+
+#table tr:hover {
+    background: #f9f9f9;
+}
+
+#table tr {
+    border-bottom: #d7d7d7 solid 1px;
+}
+
+#table td + td {
+    padding-left: 10px;
+}

@@ -1,0 +1,868 @@
+2024-12-08 19:14:01 | 123
+2024-12-08 19:14:35 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => fad3556700740f84005843ea0000039500000769db8c044c214e13d36c8ee1c6e5de69
+                            [expires] => 1733678074
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://dev.vestrus.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => ea527d6700740f84005843ea0000039500000748ac20f5f3f8acc4c4ca85e5870801cf
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => fad3556700740f84005843ea0000039500000769db8c044c214e13d36c8ee1c6e5de69
+                                    [expires] => 1733678074
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://dev.vestrus.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => ea527d6700740f84005843ea0000039500000748ac20f5f3f8acc4c4ca85e5870801cf
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => fefe
+                    [TEMPLATE_ID] => 49e938b1-1e54-4b05-8071-c97829dcbd4c
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764008
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733674474
+    [auth] => Array
+        (
+            [access_token] => fbd3556700740f84005843ea000003200000079a7e5895cdc8f802d7e221d132176d0b
+            [expires] => 1733678075
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => eb527d6700740f84005843ea0000032000000754ea2d4eaf4495d9a60be2d3d859772e
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 21:37:21 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => 71f5556700740f84005843ea0000039500000715fa01690f625ceafdf135c6207290a0
+                            [expires] => 1733686641
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://gkyw.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => 61747d6700740f84005843ea00000395000007a9e057dda736a90fb2ad21e08b411150
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => 71f5556700740f84005843ea0000039500000715fa01690f625ceafdf135c6207290a0
+                                    [expires] => 1733686641
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://gkyw.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => 61747d6700740f84005843ea00000395000007a9e057dda736a90fb2ad21e08b411150
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => dwdw
+                    [TEMPLATE_ID] => 35d5dd88-3ddd-4412-a31f-e513c26eef84
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764009
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733683041
+    [auth] => Array
+        (
+            [access_token] => 71f5556700740f84005843ea00000320000007e8b743aca1cbb837f7540ab73e2c54bb
+            [expires] => 1733686641
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => 61747d6700740f84005843ea000003200000072d8af80540c3c6454a252aef852bddd3
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 21:37:43 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => 86f5556700740f84005843ea000003950000079ceca66861fccd86f759041e862d4b30
+                            [expires] => 1733686662
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://dev.vestrus.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => 76747d6700740f84005843ea00000395000007e521d5e4fdca6a143ac388bbbe873fe4
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => 86f5556700740f84005843ea000003950000079ceca66861fccd86f759041e862d4b30
+                                    [expires] => 1733686662
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://dev.vestrus.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => 76747d6700740f84005843ea00000395000007e521d5e4fdca6a143ac388bbbe873fe4
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => r3
+                    [TEMPLATE_ID] => 6aa5c3bf-ff21-4be0-be99-bd219d9db6f3
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764010
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733683062
+    [auth] => Array
+        (
+            [access_token] => 87f5556700740f84005843ea000003200000077f6d11394696c56142ee7381107ef623
+            [expires] => 1733686663
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => 77747d6700740f84005843ea00000320000007da48383a1f4085fc9176792fadafb350
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 21:39:13 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => dcf5556700740f84005843ea0000039500000790a1c82f555c679ce7038743698ca34c
+                            [expires] => 1733686748
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://gkyw.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => cc747d6700740f84005843ea00000395000007834584d3688c3bfc7db8e300a1c05fbd
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => dcf5556700740f84005843ea0000039500000790a1c82f555c679ce7038743698ca34c
+                                    [expires] => 1733686748
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://gkyw.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => cc747d6700740f84005843ea00000395000007834584d3688c3bfc7db8e300a1c05fbd
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => r3f
+                    [TEMPLATE_ID] => cc9d8b24-5db6-48a9-acc8-e27c068fb9d7
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764011
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733683148
+    [auth] => Array
+        (
+            [access_token] => e1f5556700740f84005843ea0000032000000777c37a5fbb5c36570ecad3743659b122
+            [expires] => 1733686753
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => d1747d6700740f84005843ea00000320000007772bf4937836ce740ff7726723874c0f
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 21:40:50 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => 41f6556700740f84005843ea000003950000074cf514e72ff7dfedbadb7f87a29d1115
+                            [expires] => 1733686849
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://gkyw.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => 31757d6700740f84005843ea00000395000007fce9fc9d46c90d5de066245b4264e737
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => 41f6556700740f84005843ea000003950000074cf514e72ff7dfedbadb7f87a29d1115
+                                    [expires] => 1733686849
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://gkyw.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => 31757d6700740f84005843ea00000395000007fce9fc9d46c90d5de066245b4264e737
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => fff
+                    [TEMPLATE_ID] => fbbda366-e28b-45cf-b32d-9125d8de7ff7
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764012
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733683249
+    [auth] => Array
+        (
+            [access_token] => 42f6556700740f84005843ea00000320000007deb34e5fb6ca5d9cc37a5f75d62f68c2
+            [expires] => 1733686850
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => 32757d6700740f84005843ea00000320000007193dc794d2f39412d6c7f2e7e16cc124
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 21:40:50 | Array
+(
+    [error] => no_install_app
+    [error_information] => error install app, pls install local application 
+)
+
+2024-12-08 21:52:25 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => f8f8556700740f84005843ea00000395000007042b2a3a44c622179a9ac6abc92a358f
+                            [expires] => 1733687544
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://gkyw.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => e8777d6700740f84005843ea00000395000007c56dd60f034d0c2bf1dd1c22ab12260b
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => f8f8556700740f84005843ea00000395000007042b2a3a44c622179a9ac6abc92a358f
+                                    [expires] => 1733687544
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://gkyw.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => e8777d6700740f84005843ea00000395000007c56dd60f034d0c2bf1dd1c22ab12260b
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => ffe
+                    [TEMPLATE_ID] => 0813409a-e62a-48cb-8904-64554730cd86
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764013
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733683945
+    [auth] => Array
+        (
+            [access_token] => f9f8556700740f84005843ea00000320000007be7a3ab1e592e051e8f595d6b70d9183
+            [expires] => 1733687545
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => e9777d6700740f84005843ea0000032000000727b83394127cf180fd182381842bee92
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 21:52:28 | Array
+(
+    [error] => expired_token
+    [error_description] => The access token provided has expired.
+    [error_information] => expired token, cant get new auth? Check access oauth server.
+)
+
+2024-12-08 22:01:25 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => 15fb556700740f84005843ea000003950000078377542f5f4b76ead398a39ad4aa44f8
+                            [expires] => 1733688085
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://gkyw.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => 057a7d6700740f84005843ea00000395000007ababf78b687d39543e99d7ffe4ac7323
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => 15fb556700740f84005843ea000003950000078377542f5f4b76ead398a39ad4aa44f8
+                                    [expires] => 1733688085
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://gkyw.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => 057a7d6700740f84005843ea00000395000007ababf78b687d39543e99d7ffe4ac7323
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => ff2
+                    [TEMPLATE_ID] => 41181cbc-36f8-45f7-9e4a-69f5c6e956bd
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764014
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733684485
+    [auth] => Array
+        (
+            [access_token] => 15fb556700740f84005843ea00000320000007348e628a2b5d36f4016a2730a23c4b1a
+            [expires] => 1733688085
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => 057a7d6700740f84005843ea00000320000007f7a30cc9a1b41f38af8f2f35910903ad
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 22:01:26 | Array
+(
+    [result] => 3764015
+    [time] => Array
+        (
+            [start] => 1733684486.2142
+            [finish] => 1733684486.5777
+            [duration] => 0.36350202560425
+            [processing] => 0.072892904281616
+            [date_start] => 2024-12-08T22:01:26+03:00
+            [date_finish] => 2024-12-08T22:01:26+03:00
+        )
+
+)
+
+2024-12-08 22:03:27 | Array
+(
+    [event] => ONIMBOTMESSAGEADD
+    [event_handler_id] => 896
+    [data] => Array
+        (
+            [BOT] => Array
+                (
+                    [917] => Array
+                        (
+                            [access_token] => 8efb556700740f84005843ea00000395000007c0268eb9981b6f716fa3fefe188b89ec
+                            [expires] => 1733688206
+                            [expires_in] => 3600
+                            [scope] => user,crm,userfieldconfig,imbot
+                            [domain] => dev.vestrus.ru
+                            [server_endpoint] => https://oauth.bitrix.info/rest/
+                            [status] => L
+                            [client_endpoint] => https://gkyw.ru/rest/
+                            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                            [refresh_token] => 7e7a7d6700740f84005843ea000003950000072ce4901c0472eb217af5d49f83d485a4
+                            [user_id] => 917
+                            [client_id] => local.67556636d81836.21844026
+                            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                            [AUTH] => Array
+                                (
+                                    [access_token] => 8efb556700740f84005843ea00000395000007c0268eb9981b6f716fa3fefe188b89ec
+                                    [expires] => 1733688206
+                                    [expires_in] => 3600
+                                    [scope] => user,crm,userfieldconfig,imbot
+                                    [domain] => dev.vestrus.ru
+                                    [server_endpoint] => https://oauth.bitrix.info/rest/
+                                    [status] => L
+                                    [client_endpoint] => https://gkyw.ru/rest/
+                                    [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+                                    [refresh_token] => 7e7a7d6700740f84005843ea000003950000072ce4901c0472eb217af5d49f83d485a4
+                                    [user_id] => 917
+                                    [client_id] => local.67556636d81836.21844026
+                                    [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+                                )
+
+                            [BOT_ID] => 917
+                            [BOT_CODE] => endpoint-pl-bot
+                        )
+
+                )
+
+            [PARAMS] => Array
+                (
+                    [MESSAGE] => 3434
+                    [TEMPLATE_ID] => 04f3557c-154d-41a9-8259-26a5938e9fc3
+                    [MESSAGE_TYPE] => P
+                    [FROM_USER_ID] => 800
+                    [DIALOG_ID] => 800
+                    [TO_USER_ID] => 917
+                    [SKIP_URL_INDEX] => N
+                    [SKIP_COUNTER_INCREMENTS] => N
+                    [SKIP_COMMAND] => N
+                    [SKIP_CONNECTOR] => N
+                    [IMPORTANT_CONNECTOR] => N
+                    [SILENT_CONNECTOR] => N
+                    [AUTHOR_ID] => 800
+                    [CHAT_ID] => 83247
+                    [COMMAND_CONTEXT] => TEXTAREA
+                    [MESSAGE_ID] => 3764016
+                    [CHAT_TYPE] => P
+                    [LANGUAGE] => ru
+                )
+
+            [USER] => Array
+                (
+                    [ID] => 800
+                    [NAME] => Алексей Гудков
+                    [FIRST_NAME] => Алексей
+                    [LAST_NAME] => Гудков
+                    [WORK_POSITION] => 
+                    [GENDER] => M
+                    [IS_BOT] => N
+                    [IS_CONNECTOR] => N
+                    [IS_NETWORK] => N
+                    [IS_EXTRANET] => N
+                )
+
+        )
+
+    [ts] => 1733684606
+    [auth] => Array
+        (
+            [access_token] => 8ffb556700740f84005843ea000003200000077782187a2304c57d854f1e976b59520a
+            [expires] => 1733688207
+            [expires_in] => 3600
+            [scope] => user,crm,userfieldconfig,imbot
+            [domain] => dev.vestrus.ru
+            [server_endpoint] => https://oauth.bitrix.info/rest/
+            [status] => L
+            [client_endpoint] => https://dev.vestrus.ru/rest/
+            [member_id] => 4a9d758a6fd2ac24378ed352db90b9a4
+            [user_id] => 800
+            [refresh_token] => 7f7a7d6700740f84005843ea000003200000074d84c4725a44f9e0f70d49b815c5561f
+            [application_token] => ae530c8e895c9bfc5b7543711f9bf9a9
+        )
+
+)
+
+2024-12-08 22:03:27 | Array
+(
+    [result] => 3764017
+    [time] => Array
+        (
+            [start] => 1733684607.3989
+            [finish] => 1733684607.7651
+            [duration] => 0.36619997024536
+            [processing] => 0.075045108795166
+            [date_start] => 2024-12-08T22:03:27+03:00
+            [date_finish] => 2024-12-08T22:03:27+03:00
+        )
+
+)
+

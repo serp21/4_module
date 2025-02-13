@@ -1,0 +1,34 @@
+array (
+  'event' => 'ONTASKUPDATE',
+  'event_handler_id' => '901',
+  'data' => 
+  array (
+    'FIELDS_BEFORE' => 
+    array (
+      'ID' => '313980',
+    ),
+    'FIELDS_AFTER' => 
+    array (
+      'ID' => '313980',
+    ),
+    'IS_ACCESSIBLE_BEFORE' => 'undefined',
+    'IS_ACCESSIBLE_AFTER' => 'undefined',
+  ),
+  'ts' => '1737042471',
+  'auth' => 
+  array (
+    'access_token' => '37388967007421bc005843ea00000386000007f84f844a444f0c0c99c9828ce95781bf',
+    'expires' => '1737046071',
+    'expires_in' => '3600',
+    'scope' => 'user_brief,task',
+    'domain' => 'gkyw.ru',
+    'server_endpoint' => 'https://oauth.bitrix.info/rest/',
+    'status' => 'L',
+    'client_endpoint' => 'https://gkyw.ru/rest/',
+    'member_id' => '4a9d758a6fd2ac24378ed352db90b9a4',
+    'user_id' => '902',
+    'application_token' => '28edd97a27152bc9f20ebd05fbe127d7',
+  ),
+  'error' => 'APPLICATION_NOT_FOUND',
+  'error_description' => 'Application not found',
+)

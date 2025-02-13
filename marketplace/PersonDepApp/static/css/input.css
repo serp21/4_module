@@ -1,0 +1,22 @@
+select {
+    border-radius: 5px;
+  }
+  
+  select + select {
+    margin-top: 5px;
+  }
+  
+  input {
+    border-radius: 5px;
+    min-height: 30px;
+  }
+  
+  input.check {
+    border-radius: 5px;
+    min-height: 0;
+  }
+  
+  input.check + span {
+    padding-left: 3px;
+  }
+  

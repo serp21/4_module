@@ -1,0 +1,18 @@
+div .input-group {
+    width: 600px;
+    display: inline-flex;
+    padding-top: 2px;
+}
+
+.input-group #inputName {
+    width: 575px;
+    background-color: rgba(220, 220, 220, 0.3);
+    color: #fff;
+}
+
+.input-group > .input-group-append > button {
+    background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%3E%3Cpath%20fill%3D%22%23ffffff%22%20fill-rule%3D%22evenodd%22%20d%3D%22M1.33%205.5c0-2.304%201.866-4.17%204.17-4.17S9.67%203.195%209.67%205.5c0%202.305-1.865%204.17-4.17%204.17-2.305%200-4.17-1.865-4.17-4.17m12.528%206.944l-3.816-3.817-.014-.008C10.64%207.73%2011%206.66%2011%205.5%2011%202.462%208.537%200%205.5%200S0%202.462%200%205.5%202.463%2011%205.5%2011c1.158%200%202.232-.36%203.118-.972.004.004.005.01.01.014l3.816%203.817c.372.37.982.37%201.354%200l.06-.063c.372-.372.372-.982%200-1.354%22/%3E%3C/svg%3E);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: rgba(220, 220, 220, 0.7) solid 2px;
+}

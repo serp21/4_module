@@ -1,0 +1,72 @@
+array (
+  'event' => 'ONTASKUPDATE',
+  'event_handler_id' => '901',
+  'data' => 
+  array (
+    'FIELDS_BEFORE' => 
+    array (
+      'ID' => '313991',
+    ),
+    'FIELDS_AFTER' => 
+    array (
+      'ID' => '313991',
+    ),
+    'IS_ACCESSIBLE_BEFORE' => 'undefined',
+    'IS_ACCESSIBLE_AFTER' => 'undefined',
+  ),
+  'ts' => '1737465056',
+  'auth' => 
+  array (
+    'access_token' => 'f0aa8f67007421bc005843ea000000050000060cbeecb7c000df7040eda5e87c941653',
+    'expires' => '1737468656',
+    'expires_in' => '3600',
+    'scope' => 'user_brief,task',
+    'domain' => 'dev.vestrus.ru',
+    'server_endpoint' => 'https://oauth.bitrix.info/rest/',
+    'status' => 'L',
+    'client_endpoint' => 'https://dev.vestrus.ru/rest/',
+    'member_id' => '4a9d758a6fd2ac24378ed352db90b9a4',
+    'user_id' => '5',
+    'application_token' => '28edd97a27152bc9f20ebd05fbe127d7',
+  ),
+  'result' => 
+  array (
+    'people_settings' => 
+    array (
+      0 => 
+      array (
+        'supName' => 'Юлия Евсеева',
+        'curName' => 'Артемий Жуланов',
+        'sup' => '5',
+        'cur' => '352',
+        'upd' => 'false',
+      ),
+      1 => 
+      array (
+        'supName' => 'Юлия Евсеева',
+        'curName' => 'Марина Заревнова',
+        'sup' => '5',
+        'cur' => '41',
+        'upd' => 'true',
+      ),
+    ),
+    'taskToUpdate' => '313933',
+    'tasksToUpdate' => 
+    array (
+      0 => '0',
+      1 => '313958',
+      2 => '313959',
+      3 => '313960',
+      5 => '313992',
+    ),
+  ),
+  'time' => 
+  array (
+    'start' => 1737465057.406319,
+    'finish' => 1737465057.804144,
+    'duration' => 0.3978250026702881,
+    'processing' => 4.506111145019531E-5,
+    'date_start' => '2025-01-21T16:10:57+03:00',
+    'date_finish' => '2025-01-21T16:10:57+03:00',
+  ),
+)

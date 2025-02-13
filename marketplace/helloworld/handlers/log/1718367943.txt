@@ -1,0 +1,28 @@
+array (
+  'event' => 'ONAPPTEST',
+  'event_id' => '728',
+  'data' => 
+  array (
+    'QUERY' => 
+    array (
+      'any' => 'data',
+    ),
+    'LANGUAGE_ID' => 'ru',
+  ),
+  'ts' => '1718367943',
+  'auth' => 
+  array (
+    'access_token' => 'd7446c66006e8580005843ea000003210000064a5ea466695485491f234d392bbe66d1',
+    'expires' => '1718371543',
+    'expires_in' => '3600',
+    'scope' => 'crm,user,imbot,im',
+    'domain' => 'dev.vestrus.ru',
+    'server_endpoint' => 'https://oauth.bitrix.info/rest/',
+    'status' => 'L',
+    'client_endpoint' => 'https://dev.vestrus.ru/rest/',
+    'member_id' => '4a9d758a6fd2ac24378ed352db90b9a4',
+    'user_id' => '801',
+    'refresh_token' => 'c7c39366006e8580005843ea000003210000062287182c4a9d7214e0af27f115719992',
+    'application_token' => '50277455ea59de07181476894805456a',
+  ),
+)

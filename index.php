@@ -4107,13 +4107,13 @@ else
 
         <?php    
             $historyTable   = getList(
-                30,
+                149,
                 array(
                     "TIMESTAMP_X",
-                    702, //worker
+                    "PROPERTY_702", //worker
                     "NAME",
-                    701, //task
-                    700
+                    "PROPERTY_701", //task
+                    "PROPERTY_700"
                 ),
                 array(),
                 'TIMESTAMP_X', // Изменено на 'TIMESTAMP_X'
@@ -4133,10 +4133,10 @@ else
             foreach ($historyTable as $row) {
                 $htmlTable .= '<tr>';
                 $htmlTable .= '<td>'.$row['TIMESTAMP_X'].'</td>';
-                $htmlTable .= '<td>'.$row['702'].'</td>';
+                $htmlTable .= '<td>'.array_shift($row['PROPERTY_702']).'</td>';
                 $htmlTable .= '<th>'.$row['NAME'].'</th>';
-                $htmlTable .= '<td>'.$row['701'].'</td>';
-                $htmlTable .= '<td>'.$row['700'].'</td>';
+                $htmlTable .= '<td>'.$row['PROPERTY_701'].'</td>';
+                $htmlTable .= '<td>'.$row['PROPERTY_700'].'</td>';
 
                 $totalBalance = + 701;
 

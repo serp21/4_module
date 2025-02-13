@@ -77,11 +77,115 @@ $qIn   = getList(
 
 
 
+    то есть че надо будет
+
+    нарисовать табличку
+
+    взять данные из иб фот
+
+    и форычнуть их как в тестовом задании?
+
+    и вывести под табличку
+
+
+
+    CModule::IncludeModule("im");
+    CModule::IncludeModule("iblock");
+    CModule::IncludeModule("crm");
+    
+    $deal_id = "{{ID}}";
+    $assigned = "{{Кем изменен}}";
+    $assigned_id = explode("_", $assigned)[1];
+    
+    $iblockId = 172;
+    
+    $arFilter = array(
+        "IBLOCK_ID" => $iblockId,
+        "ACTIVE" => "Y",
+        "PROPERTY_DEAL" => $deal_id
+    );
+    
+    $arSelect = array(
+        "ID",
+        "NAME",
+        //"PROPERTY_DESC",
+        "PROPERTY_PRICE"
+    //	, "PROPERTY_COUNT"
+    //	, "PROPERTY_DEAL"
+    );
+    
+    $res = CIBlockElement::GetList(
+        [],
+        $arFilter,
+        false,
+        false,
+        $arSelect
+    );
+    
+    $resOut = array();
+    $totalPrice = 0;
+    
+    $dealName = "{{Название}}";
+    
+    $pList = "Сделка: " . $dealName . "\n";
+    $pList .= "Список товаров:\n";
+    
+    while ($Element = $res->Fetch()) {
+        $itemName = $Element['NAME'];
+    //    $itemDesc = $Element['PROPERTY_DESC_VALUE'];
+        $itemPrice = $Element['PROPERTY_PRICE_VALUE'];
+    //    $itemCount = $Element['PROPERTY_COUNT_VALUE'];
+    //	$itemDeal = $Element['PROPERTY_DEAL_VALUE'];
+    
+        $totalPrice += $itemPrice;
+    
+        //$resOut[] = "Наименование: $itemName, Описание: $itemDesc, Цена: $itemPrice, Количество: $itemCount";
+        $pList .= $itemName . "\n";
+    }
+    
+    //$pList = "Сделка № " . $deal_id . "\n";
+    
+    //$pList .= !empty($resOut) ? implode("\n", $resOut) : "Нет товаров";
+    
+    $pList .= "Общая стоимость: " . $totalPrice;
+    
+    echo "<pre>"; // Чтобы вывод был более читаемым
+    print_r('12321');
+    print_r($pList);
+    echo "</pre>";
+    
+    $arMessageFields = array(
+        "NOTIFY_TYPE" => IM_NOTIFY_FROM,
+        "FROM_USER_ID" => $assigned_id,
+        "TO_USER_ID" => $assigned_id,
+        "NOTIFY_MESSAGE" => $pList,
+        "NOTIFY_MODULE" => "bizproc",
+        "NOTIFY_EVENT" => "activity"
+    );
+    
+    CIMNotify::Add($arMessageFields);
 
 
 
 
 
+    $iblockId = 149;
+    
+    $arFilter = array(
+        "IBLOCK_ID" => $iblockId,
+        "ACTIVE" => "Y",
+        "PROPERTY_DEAL" => $deal_id
+    );
+    
+    $arSelect = array(
+        //"ID",
+        "TIMESTAMP_X",
+        702, //worker
+        "NAME",
+        701, //task
+        700,
+        //???? / total kakoy-to
+    );
 
 
 

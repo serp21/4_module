@@ -201,9 +201,19 @@ $qIn   = getList(
         )
 
 
+        $htmlTable .= '<td><a href="' . BITRIX_DOMAIN . 'company/personal/user/' . $idUser . '/">'.$idUser.'</a></td>';
+
+<a href=""></a>
 
 
+$testTable = getList(
+    149
+);
 
+foreach ($testTable as $row) {
+    print_r($row);
+    echo "<br>";
+}
 
 
     function getList($list = 0, $select = array(), $filter = array(), $order = 'ID', $start = 0, $content = array())
@@ -356,6 +366,104 @@ $qIn   = getList(
 
 
 
+  <div class="mytarget" style="display: none;">
+
+  <?php    
+      $historyTable = getList(
+          149,
+          array(
+              "CHANGED",
+              "PROPERTY_702", //worker
+              "NAME",
+              "PROPERTY_701", //task
+              "PROPERTY_700"
+          ),
+          array(),
+          'TIME',
+          0
+      );
+
+      $totalBalance = 0;
+
+      $htmlTable = '<table border="1">';
+      $htmlTable .= '<tr>';
+      $htmlTable .= '<th>Дата и время</th>';
+      $htmlTable .= '<th>Сотрудник</th>';
+      $htmlTable .= '<th>Событие</th>';
+      $htmlTable .= '<th>Задача</th>';
+      $htmlTable .= '<th>ФОТ события</th>';
+      $htmlTable .= '<th>Текущий баланс</th>';
+      $htmlTable .= '</tr>';
+
+      foreach ($historyTable as $row) {
+          $htmlTable .= '<tr>';
+              $htmlTable .= '<td>' . htmlspecialchars($row['CHANGED'], ENT_QUOTES, 'UTF-8') . '</td>';
+
+              $idUser = array_shift($row['PROPERTY_702']);
+
+              if ($idUser) {
+
+                  $idUserSafe = htmlspecialchars($idUser, ENT_QUOTES, 'UTF-8');
+                  $rsUser = CUser::GetByID($idUser);
+                  $arUser = $rsUser->Fetch();
+
+                  if ($arUser) {
+
+                      $userProfileUrl = BITRIX_DOMAIN . "company/personal/user/" . $idUserSafe . "/";
+                      $userName = htmlspecialchars($arUser["NAME"] . " " . $arUser["LAST_NAME"], ENT_QUOTES, 'UTF-8');
+
+                      $htmlTable .= '<td><a href="' . $userProfileUrl . '">' . $userName . '</a></td>';
+
+                  } else {
+                      $htmlTable .= '<td>Пользователь не найден (ID: ' . $idUserSafe . ')</td>';
+                  }
+              } else {
+                  $htmlTable .= '<td>ID пользователя не указан</td>';
+              }
+
+              $htmlTable .= '<td>'.$row['NAME'].'</td>';
+
+              $htmlTable .= '<td>'.array_shift($row['PROPERTY_701']).'</td>';
+              
+              $fotValue = array_shift($row['PROPERTY_700']);
+
+              $htmlTable .= '<td>'.$fotValue.'</td>'; // Выводим ФОТ событие
+
+              $totalBalance += $fotValue;
+
+              $htmlTable .= '<td>'.$totalBalance.'</td>'; // Выводим текущий баланс
+          $htmlTable .= '</tr>';
+      }
+
+      $htmlTable .= '</table>';
+
+      echo $htmlTable;
+
+      $testTable = getList(
+          149
+      );
+
+      foreach ($testTable as $row) {
+          print_r($row);
+          echo "<br>";
+      }
+      ?>
+
+  </div>
+
+
+
+
+  echo $_SESSION['bitAppFot']['user'];
+
+
+
+  для даты селект из бд
+
+
+  $dateSelect = "SELECT DATE_ACTIVE_FROM FROM b_iblock_element WHERE IBLOCK_ID = 149 AND PROPERTY_702 = " . (int)$userIdToFilter;
+
+  $rDateSelect = $connection->query($dateSelect);
 
 
 
@@ -365,12 +473,156 @@ $qIn   = getList(
 
 
 
+            
+            $historyTable = getList(
+                149,
+                array(
+                    "DATE_ACTIVE_FROM",
+                    "PROPERTY_702", //worker
+                    "NAME",
+                    "PROPERTY_701", //task
+                    "PROPERTY_700"
+                ),
+                array(
+                    "PROPERTY_702" => $userIdToFilter
+                )
+            );
+
+            $totalBalance = 0;
+
+            $htmlTable = '<table border="1">';
+            $htmlTable .= '<tr>';
+            $htmlTable .= '<th>Дата и время</th>';
+            $htmlTable .= '<th>Сотрудник</th>';
+            $htmlTable .= '<th>Событие</th>';
+            $htmlTable .= '<th>Задача</th>';
+            $htmlTable .= '<th>ФОТ события</th>';
+            $htmlTable .= '<th>Текущий баланс</th>';
+            $htmlTable .= '</tr>';
+
+            foreach ($historyTable as $row) {
+                $htmlTable .= '<tr>';
+                    //$htmlTable .= '<td>' . htmlspecialchars($row['CHANGED'], ENT_QUOTES, 'UTF-8') . '</td>';
+                    $dateSelect = "SELECT DATE_ACTIVE_FROM FROM b_iblock_element WHERE IBLOCK_ID = 149 AND PROPERTY_702 = " . (int)$userIdToFilter;
+  
+                    $rDateSelect = $connection->query($dateSelect);
+
+                    $htmlTable .= '<td>'.$row['DATE_ACTIVE_FROM'].'</td>';
+
+                    $idUser = array_shift($row['PROPERTY_702']);
+
+                    if ($idUser) {
+
+                        $idUserSafe = htmlspecialchars($idUser, ENT_QUOTES, 'UTF-8');
+                        $rsUser = CUser::GetByID($idUser);
+                        $arUser = $rsUser->Fetch();
+
+                        if ($arUser) {
+
+                            $userProfileUrl = BITRIX_DOMAIN . "company/personal/user/" . $idUserSafe . "/";
+                            $userName = htmlspecialchars($arUser["NAME"] . " " . $arUser["LAST_NAME"], ENT_QUOTES, 'UTF-8');
+
+                            $htmlTable .= '<td><a href="' . $userProfileUrl . '">' . $userName . '</a></td>';
+
+                        } else {
+                            $htmlTable .= '<td>Пользователь не найден (ID: ' . $idUserSafe . ')</td>';
+                        }
+                    } else {
+                        $htmlTable .= '<td>ID пользователя не указан</td>';
+                    }
+
+                    $htmlTable .= '<td>'.$row['NAME'].'</td>';
+
+                    $htmlTable .= '<td>'.array_shift($row['PROPERTY_701']).'</td>';
+                    
+                    $fotValue = array_shift($row['PROPERTY_700']);
+
+                    $htmlTable .= '<td>'.$fotValue.'</td>'; // Выводим ФОТ событие
+
+                    $totalBalance += $fotValue;
+
+                    $htmlTable .= '<td>'.$totalBalance.'</td>'; // Выводим текущий баланс
+                $htmlTable .= '</tr>';
+            }
+
+            $htmlTable .= '</table>';
+
+            echo $htmlTable;
+
+            //echo $_SESSION['bitAppFot']['ID'];
+            
+            $testTable = getList(
+                149
+            );
+
+            foreach ($testTable as $row) {
+                print_r($row);
+                echo "<br>";
+            }
+            
+
+
+
+            $userIdToFilter = $_SESSION['bitAppFot']['ID'];
+
+            $sqlQuery = "
+            SELECT 
+                DATE_ACTIVE_FROM,
+                PROPERTY_702, 
+                NAME, 
+                PROPERTY_701, 
+                PROPERTY_700 
+            FROM 
+                b_iblock_element 
+            WHERE 
+                IBLOCK_ID = 149 
+                AND PROPERTY_702 = " . (int)$userIdToFilter;
+
+            // Выполняем SQL-запрос
+            $result = $connection->query($sqlQuery);
+
+            // Обрабатываем результат
+            $htmlTable = '';
+            while ($row = $result->fetch()) {
+                $htmlTable .= '<tr>';
+
+                // Получаем дату и время из текущей строки результата запроса
+                $dateTime = $row['DATE_ACTIVE_FROM'];
+
+                // Форматируем дату и время
+                if ($dateTime) {
+                    // Форматируем дату в нужный формат
+                    $formattedDateTime = FormatDate("d.m.Y H:i:s", MakeTimeStamp($dateTime));
+                    $htmlTable .= '<td>' . htmlspecialchars($formattedDateTime, ENT_QUOTES, 'UTF-8') . '</td>';
+                } else {
+                    $htmlTable .= '<td>Дата не указана</td>';
+                }
+
+                // Остальные поля
+                $htmlTable .= '<td>' . htmlspecialchars($row['PROPERTY_702'], ENT_QUOTES, 'UTF-8') . '</td>';
+                $htmlTable .= '<td>' . htmlspecialchars($row['NAME'], ENT_QUOTES, 'UTF-8') . '</td>';
+                $htmlTable .= '<td>' . htmlspecialchars($row['PROPERTY_701'], ENT_QUOTES, 'UTF-8') . '</td>';
+                $htmlTable .= '<td>' . htmlspecialchars($row['PROPERTY_700'], ENT_QUOTES, 'UTF-8') . '</td>';
+
+                $htmlTable .= '</tr>';
+            }
+
+            echo $htmlTable;
 
 
 
 
 
 
-
+$employeesList_Q = "SELECT 
+                                `b_user`.`ID` AS 'ID',
+                                `b_user`.`NAME` AS 'NAME', 
+                                `b_user`.`LAST_NAME` AS 'LAST_NAME', 
+                                `b_user`.`SECOND_NAME` AS 'SECOND_NAME',
+                                `b_uts_user`.`UF_ID_POSITION` AS 'POSITION_ID'
+                                FROM b_uts_user
+                                LEFT JOIN b_user ON `b_user`.`ID` = `b_uts_user`.`VALUE_ID`
+                                WHERE `b_uts_user`.`UF_ID_POSITION` = $idPos AND `b_user`.`ACTIVE` = 'Y'";
+            $employeesList_res = $db->query($employeesList_Q);
 
 
